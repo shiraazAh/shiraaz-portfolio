@@ -13,4 +13,19 @@ export const workPortfolioCards = [{
     image: "/images/CardImage/konfhub-checkinapp.jpg",
     description: "A PWA app that allows to check-in ticket holders, seamlessly works offline and online"
 },
+{
+    title: "08: - Konfhub - Sponsor App",
+    image: "/images/CardImage/konfhub-sponsorapp.png",
+    description: "A PWA app that allows sponsors to track leads during a event, seamlessly works offline and online"
+},
+{
+    title: "07: - Konfhub - Konfhub Dashboard App",
+    image: "/images/CardImage/konfhub-dashboard.webp",
+    description: "Dashboard that has all features related managing a event (Analytics, Emailing, Money settlements etc) "
+},
+{
+    title: "06: - Konfhub - Quizhub",
+    image: "/images/CardImage/quizhub-website.png",
+    description: "A platform to create and manage live quizzes; Has quizzing tournaments, live chat, leaderboards and more"
+},
 ]
