@@ -27,8 +27,8 @@ export default function Workflows() {
 						</p>
 					</div>
 					{/* Spotlight items */}
-          <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
-					{workPortfolioCards.map((card, index) => (
+					<Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
+						{workPortfolioCards.map((card, index) => (
 							<a
 								className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
 								href="#0"
@@ -59,27 +59,40 @@ export default function Workflows() {
 										</span>
 									</div>
 									{/* Image */}
-									<div className="px-6" style={{height: 150, position: 'relative'}}>
+									<div
+										className="px-6"
+										style={{ height: 150, position: "relative" }}
+									>
 										<Image
 											className="inline-flex"
 											src={card.image}
-                      // width={340}
+											// width={340}
 											// height={150}
-                      fill
-                      objectFit="cover"
+											fill
+											objectFit="cover"
 											alt="Workflow 01"
 										/>
 									</div>
 									{/* Content */}
 									<div className="p-6">
-										<p className="text-indigo-200/65">
-                      {card.description}
-										</p>
+										<p className="text-indigo-200/65">{card.description}</p>
 									</div>
 								</div>
 							</a>
-					))}
-          </Spotlight>
+						))}
+					</Spotlight>
+					<div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center mt-10">
+						<div data-aos="fade-up" data-aos-delay={400}>
+							<a
+								className="btn group mb-4 w-full bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+								href="#0"
+							>
+								<span className="relative inline-flex items-center">
+									View All
+								</span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
